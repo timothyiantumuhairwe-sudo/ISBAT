@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ISBAT Student Dashboard</title>
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="portal.css">
+
+    <!-- Internal CSS for Quick Links -->
+    <style>
+        .quick-links {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .quick-card {
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            border: 1px solid #ddd;
+            text-decoration: none;
+            color: #1A1A2E;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        .quick-card:hover {
+            background: #eeeeff;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+        <img src="isbat-logo.png" alt="ISBAT Logo" class="logo">
+
+        <h3>Student Portal</h3>
+        <p>Timothy Ian</p>
+
+        <nav>
+            <a href="dashboard.html">Dashboard</a>
+            <a href="courses.html">My Courses</a>
+            <a href="fees.html">Fee Statement</a>
+        </nav>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content">
+
+        <header class="welcome">
+            <div>
+                <h1>Welcome, Timothy Ian</h1>
+                <p>Monday, 23 November 2026</p>
+            </div>
+
+            <!-- Inline CSS for Status Badge -->
+            <span style="background:#EAF3DE; color:#27500A;
+            padding:8px 18px; border-radius:20px;">
+                Active
+            </span>
+        </header>
+
+        <h2>Academic Overview</h2>
+
+        <!-- Summary Cards -->
+        <section class="metrics">
+
+            <div class="metric-card">
+                <h3>GPA</h3>
+                <h2>4.10</h2>
+                <p>Current GPA</p>
+            </div>
+
+            <div class="metric-card">
+                <h3>Credit Hours</h3>
+                <h2>24</h2>
+                <p>Registered Credits</p>
+            </div>
+
+            <div class="metric-card">
+                <h3>Outstanding Fee Balance</h3>
+                <h2>UGX 450,000</h2>
+                <p>Pending payment</p>
+            </div>
+
+        </section>
+
+        <!-- Quick Links -->
+        <h2>Quick Links</h2>
+
+        <section class="quick-links">
+
+            <a href="dashboard.html" class="quick-card">
+                Dashboard
+            </a>
+
+            <a href="courses.html" class="quick-card">
+                My Courses
+            </a>
+
+            <a href="fees.html" class="quick-card">
+                Fee Statement
+            </a>
+
+            <a href="profile.html" class="quick-card">
+                Update Profile
+            </a>
+
+        </section>
+
+    </main>
+
+</body>
+</html>
